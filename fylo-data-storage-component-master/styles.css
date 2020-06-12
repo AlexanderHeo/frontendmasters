@@ -1,0 +1,207 @@
+.main {
+  width: 375px;
+  height: 671px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+.bg-img {
+  position: absolute;
+  width: 375px;
+  height: 100%;
+  background-image: url('./images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.header {
+  width: 86%;
+  height: 28%;
+  background-color: hsl(228, 56%, 26%);
+  margin-top: 130px;
+  border-radius: 10px 100px 10px 10px;
+}
+.logo {
+  margin: 40px 40px 0;
+}
+.icon-container {
+  display: flex;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+.icon-bg {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(229, 57%, 11%);
+  margin-right: 12px;
+  border-radius: 10px;
+}
+.usage {
+  width: 86%;
+  height: 23%;
+  display: flex;
+  background-color: hsl(228, 56%, 26%);
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.usage-container {
+  position: relative;
+  width: 100%;
+  font-size: 0.9rem;
+  color: hsl(243, 100%, 93%);
+  margin: 30px 30px;
+}
+.usage-container .message {
+  width: 90%;
+  margin: 0 auto;
+}
+.usage-container .message span {
+  font-weight: 700;
+}
+.usage .bar {
+  content: '';
+  position: absolute;
+  top: 30px;
+  width: 265px;
+  height: 23px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+.usage .bar::before {
+  content: '';
+  position: absolute;
+  right: 270px;
+  width: 74%;
+  height: 15px;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  margin-top: 4px;
+  border-radius: 20px;
+  z-index: 2;
+  animation: pinkSlide 0.3s ease-in 0.18s forwards;
+}
+@keyframes pinkSlide {
+  to {
+    transform: translateX(205px);
+  }
+}
+.usage .bar::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 3;
+  animation: dotSlide 0.3s ease-in 0.2s forwards;
+}
+@keyframes dotSlide {
+  to {
+    transform: translateX(181px)
+  }
+}
+.gb {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+.gbleft-container {
+  position: relative;
+  width: 250px;
+  height: 21px;
+  display: flex;
+  justify-content: center;
+}
+.gbleft {
+  position: absolute;
+  top: 10px;
+  width: 200px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-transform: uppercase;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.gbleft span {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 1440px) {
+  .main {
+    position: relative;
+    width: 1440px;
+    height: 800px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .bg-img {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url('./images/bg-desktop.svg');
+    background-size: contain;
+    background-position: center bottom;
+
+  }
+  .header {
+    width: 24%;
+    height: 24%;
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  .usage {
+    width: 40%;
+    height: 17%;
+    margin-left: 30px;
+  }
+  .gbleft-container {
+    display: absolute;
+  }
+  .gbleft {
+    top: -146px;
+    right: -255px;
+  }
+  .gbleft-triangle {
+    position: absolute;
+    left: 472px;
+    bottom: 100px;
+    width: 34px;
+    height: 40px;
+    background-color: #fff;
+    transform: skew(4deg, 46deg);
+  }
+  .usage .bar {
+    width: 100%;
+    margin-top: -2px;
+  }
+  .usage .bar::after {
+    left: -177px;
+    animation: wideDotSlide 0.3s ease-in 0.2s forwards;
+  }
+  @keyframes wideDotSlide {
+    to {
+      transform: translateX(585px);
+    }
+  }
+  .usage .bar::before {
+    width: 81%;
+    right: 721px;
+    animation: widePinkSlide 0.3s ease-in 0.2s forwards;
+  }
+  @keyframes widePinkSlide {
+    to {
+      transform: translateX(628px);
+    }
+  }
+}
