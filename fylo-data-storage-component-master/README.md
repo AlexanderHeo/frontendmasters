@@ -11,16 +11,14 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
-## The challenge
+## The solution
 
 This page has been built in HTML and CSS, with media queries for
 
 screen responsiveness. Animation has been added with CSS keyframes.
 
-## Where to find everything
+## Solution deployed
 
 [Fylo Data Storage Component by Alex heo](https://gifted-shannon-0ec53c.netlify.app/)
 
 ## Thanks for check out my solution!
-
-
