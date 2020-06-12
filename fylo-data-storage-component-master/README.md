@@ -19,4 +19,8 @@ screen responsiveness. Animation has been added with CSS keyframes.
 
 ## Where to find everything
 
-[Fylo Data Storage Component by Alex heo]()
+[Fylo Data Storage Component by Alex heo](https://gifted-shannon-0ec53c.netlify.app/)
+
+## Thanks for check out my solution!
+
+
