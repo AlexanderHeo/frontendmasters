@@ -96,7 +96,7 @@ body {
   margin-top: 3px;
   border-radius: 20px;
   z-index: 2;
-  /* animation: pinkSlide 0.3s ease-in 0.18s forwards; */
+  animation: pinkSlide 0.3s ease-in 0.18s forwards;
 }
 @keyframes pinkSlide {
   to {
@@ -113,7 +113,7 @@ body {
   background-color: #fff;
   border-radius: 5px;
   z-index: 3;
-  /* animation: dotSlide 0.3s ease-in 0.2s forwards; */
+  animation: dotSlide 0.3s ease-in 0.2s forwards;
 }
 @keyframes dotSlide {
   to {
