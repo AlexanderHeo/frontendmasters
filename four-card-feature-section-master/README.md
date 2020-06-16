@@ -6,7 +6,7 @@
 ## Welcome! 👋
 
 Thanks for checking out my solution to Frontend Mentor's Four Card Feature Section coding challenge.
-You can see the challenge at ![Frontend Masters](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK)
+You can see the challenge at <https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK>
 
 ## The challenge by Alex Heo
 #Technologies Used
