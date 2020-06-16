@@ -18,8 +18,8 @@ keyframe animations
 ## To see this project   
 clone project   
 open code in code editor   
-launch index.html in browser   
-`git clone https://github.com/AlexanderHeo/frontendmasters/four-card-section-master`
-`cd frontendmasters/four-card-section-master`
+launch index.html in browser     
+`git clone https://github.com/AlexanderHeo/frontendmasters/four-card-section-master`    
+`cd frontendmasters/four-card-section-master`    
 `code .`
 
