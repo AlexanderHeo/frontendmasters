@@ -13,6 +13,7 @@ body {
   font-family: 'Karla', sans-serif;
 }
 header,
+section,
 main {
   width: 375px;
   display: flex;
@@ -52,6 +53,7 @@ main::before {
   display: inline-block;
   background-image: url('./images/image-intro-mobile.jpg');
 }
+
 .hero-content {
   width: 100%;
   height: 500px;
@@ -112,14 +114,12 @@ main::before {
   align-items: center;
   margin: 31px auto;
   background-color: hsl(256, 26%, 20%);
-  border: 1px solid hsl(0, 0%, 98%);
+  border: 1.5px solid hsl(0, 0%, 98%);
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .different {
-  width: 100%;
-  /* height: 1170px; */
   font-family: 'DM Serif Display', serif;
 }
 .diff-bar {
@@ -155,12 +155,11 @@ main::before {
   margin-top: 13px;
 }
 
-
 .how-we-work {
   display: flex;
   height: 587px;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
   color: hsl(0, 0%, 98%);
 }
 .how-we-work img {
@@ -334,8 +333,8 @@ footer .logo::before {
   }
   .header-menu-button {
     position: relative;
-    left: 33px;
-    bottom: 10.5px;
+    left: 32px;
+    bottom: 11.5px;
   }
   .header-menu-button div {
     background-color: #fff;
@@ -414,7 +413,7 @@ footer .logo::before {
     margin: 27.4px 0 0 165.8px;
   }
   .hero-button {
-    margin-left: 166px;
+    margin: -1px 0 0 166px;
   }
   .hero-button::before{
     content: '';
@@ -429,25 +428,31 @@ footer .logo::before {
   }
 
   .different {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 306px 0 0 338px;
+    margin: 306px auto 0;
   }
   .diff-bar {
     margin: 0;
   }
   .diff-header {
-    margin: 45.6px 0 0;
+    margin: 45.6px 0 0 0;
+    position: relative;
+    width: 1110px;
+    height: 100px;
     font-size: 70px;
+    text-align: left;
   }
   .diff-square-container {
     display: flex;
-    margin-top: 61px;
+    margin-top: 58px;
   }
   .diff-square {
     align-items: flex-start;
     width: 380px;
+  }
+  .diff-square:nth-of-type(1n+2) {
+    margin-left: 30px;
   }
   .diff-desc {
     width: 350px;
